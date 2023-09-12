@@ -1,0 +1,42 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#main{
+    height: 300px;
+}
+.Footer{
+    background-color: burlywood;
+    height: 50px;
+    bottom: 0;
+}
+
+.white{
+    height: 300px;
+}
+.gray{
+    height: 300px;
+    margin: auto auto;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.not-provided{
+    display: none;
+    position: sticky;
+    /* top: 50vh; */
+}
+
+/* z인덳는 뭐야  */
+@media (max-width: 1000px) {
+    .Footer,
+    .gray,
+    .white,
+    .Footer{
+        display: none;
+    }
+    .not-provided {
+        display: block;
+    }
+}
