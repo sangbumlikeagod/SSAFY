@@ -20,5 +20,8 @@ from articles import views
 urlpatterns = [
     path("", views.home),
     path('admin/', admin.site.urls),
-    path('articles/', views.index)
+    path('articles/', views.index),
+    path('ssafy/', views.ssafy),
+    path('bank/', views.get_money),
+    path('lotto/', views.lotto),
 ]
