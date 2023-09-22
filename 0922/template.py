@@ -7,8 +7,16 @@ sys.stdin = file
 test_case = int(input())
 
 
+            
+        
+
+
+
 for num in range(test_case):
     return_value = 0
+    
+
+
 
 
 
