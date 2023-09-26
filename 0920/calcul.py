@@ -19,13 +19,13 @@ for num in range(test_case):
         if next == end:
             return_value = ct
             break
-        if next + 1 not in dic and next + 1 < 1e6:
+        if next + 1 not in dic and next + 1 <= 1e6:
             dic[next + 1] = True
             que.append((next + 1, ct + 1))
         if next - 1 not in dic and next - 1 > 0:
             dic[next - 1] = True
             que.append((next - 1, ct + 1))
-        if next * 2 not in dic and next * 2  < 1e6:
+        if next * 2 not in dic and next * 2  <= 1e6:
             dic[next * 2] = True
             que.append((next * 2, ct + 1))
         if next - 10 not in dic and next - 10 > 0:

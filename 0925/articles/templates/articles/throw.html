@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %} 
+<div>
+    
+<form action="{% url "articles:catch" %}">
+    <div>
+        <label for="hi">H_i :</label>
+        <input type="text" id="hi" name='hi'>
+    </div>
+    <div>
+        <label for="key">Key :</label>
+        <input type="text" id="key" name='key'>
+    </div>
+    <button>전달</button>
+</form>
+</div>
+{% endblock content %}
